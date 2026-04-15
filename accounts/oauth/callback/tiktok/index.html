@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>TikTok OAuth Callback</title></head>
+<body>
+<p>Redirecting...</p>
+<script>
+  // Forward OAuth params to localhost
+  const params = window.location.search;
+  window.location.href = 'http://localhost:3000/accounts/oauth/callback/tiktok' + params;
+</script>
+</body>
+</html>
